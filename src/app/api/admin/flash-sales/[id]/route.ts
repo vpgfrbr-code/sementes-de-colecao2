@@ -137,10 +137,7 @@ export async function PUT(
 
   // Determine if we need to sync product flags
   const willBeActive = body.active ?? wasActive;
-  if (willBeActive) {
-    await syncProductSaleFlags(supabase, id, true);
-  }
-
+  
   return NextResponse.json({ ok: true });
 }
 
@@ -161,9 +158,7 @@ export async function DELETE(
     .eq("id", id)
     .single();
 
-  if (current?.active) {
-    await syncProductSaleFlags(supabase, id, false);
-  }
+ 
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const { error } = await (supabase as any).from("flash_sales").delete().eq("id", id);
