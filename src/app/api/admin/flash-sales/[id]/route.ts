@@ -74,7 +74,7 @@ export async function PUT(
   const wasActive = current.active;
 
   
-  }
+  
 
   // Update flash sale fields
   const updates: Record<string, unknown> = {};
