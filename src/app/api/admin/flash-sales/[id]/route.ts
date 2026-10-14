@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createServerClient } from "@/lib/supabase/server";
 import { requireAdmin, isAdminError } from "@/lib/admin";
+
 export async function GET(
   _req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
@@ -70,11 +71,6 @@ export async function PUT(
     return NextResponse.json({ error: "Flash sale not found" }, { status: 404 });
   }
 
-  const wasActive = current.active;
-
-  
-  
-
   // Update flash sale fields
   const updates: Record<string, unknown> = {};
   if (body.active !== undefined) updates.active = body.active;
@@ -100,7 +96,16 @@ export async function PUT(
     for (const t of body.translations) {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       await (supabase as any)
-      
+        .from("flash_sale_translations")
+        .upsert(
+          {
+            flash_sale_id: id,
+            locale: t.locale,
+            title: t.title,
+            subtitle: t.subtitle,
+            button_text: t.button_text,
+          },
+          { onConflict: "flash_sale_id,locale" }
         );
     }
   }
@@ -125,9 +130,6 @@ export async function PUT(
     }
   }
 
-  // Determine if we need to sync product flags
-  const willBeActive = body.active ?? wasActive;
-  
   return NextResponse.json({ ok: true });
 }
 
@@ -140,15 +142,6 @@ export async function DELETE(
 
   const { id } = await params;
   const supabase = createServerClient();
-
-  // eslint-disable-next-line @typescript-eslint/no-explicit-any
-  const { data: current } = await (supabase as any)
-    .from("flash_sales")
-    .select("active")
-    .eq("id", id)
-    .single();
-
- 
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const { error } = await (supabase as any).from("flash_sales").delete().eq("id", id);
