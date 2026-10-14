@@ -73,9 +73,7 @@ export async function PUT(
 
   const wasActive = current.active;
 
-  // If we're changing items or deactivating, clear old product flags first
-  if (wasActive && (body.items !== undefined || body.active === false)) {
-    await syncProductSaleFlags(supabase, id, false);
+  
   }
 
   // Update flash sale fields
