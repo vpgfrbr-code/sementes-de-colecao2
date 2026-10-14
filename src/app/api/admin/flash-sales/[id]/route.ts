@@ -41,7 +41,6 @@ export async function PUT(
   if (isAdminError(adminResult)) return adminResult;
 
   const { id } = await params;
-
   let body: {
     active?: boolean;
     coupon_id?: string | null;
