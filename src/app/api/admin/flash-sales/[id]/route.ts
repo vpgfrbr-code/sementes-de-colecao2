@@ -100,12 +100,7 @@ export async function PUT(
     for (const t of body.translations) {
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       await (supabase as any)
-        .from("flash_sale_translations")
-        .upsert(
-          {
-            flash_sale_id: id,
-           
-          { onConflict: "flash_sale_id,locale" }
+      
         );
     }
   }
