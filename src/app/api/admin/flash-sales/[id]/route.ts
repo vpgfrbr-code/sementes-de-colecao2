@@ -104,11 +104,7 @@ export async function PUT(
         .upsert(
           {
             flash_sale_id: id,
-            locale: t.locale,
-            title: t.title,
-
-            button_text: t.button_text,
-          },
+           
           { onConflict: "flash_sale_id,locale" }
         );
     }
