@@ -106,7 +106,7 @@ export async function PUT(
             flash_sale_id: id,
             locale: t.locale,
             title: t.title,
-            subtitle: t.subtitle,
+
             button_text: t.button_text,
           },
           { onConflict: "flash_sale_id,locale" }
