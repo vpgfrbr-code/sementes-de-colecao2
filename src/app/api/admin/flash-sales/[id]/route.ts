@@ -1,8 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { createServerClient } from "@/lib/supabase/server";
 import { requireAdmin, isAdminError } from "@/lib/admin";
-import { syncProductSaleFlags } from "../route";
-
 export async function GET(
   _req: NextRequest,
   { params }: { params: Promise<{ id: string }> }
