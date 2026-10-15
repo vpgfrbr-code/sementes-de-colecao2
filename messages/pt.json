@@ -17,25 +17,76 @@
   },
   "shop": {
     "title": "Loja",
-    "subtitle": "Explore o nosso catálogo de genéticas exclusivas."
+    "subtitle": "Explore o nosso catálogo de genéticas exclusivas.",
+    "metaTitle": "Loja de Sementes | Coruja Genetics",
+    "metaDescription": "Compre genéticas de colecionador exclusivas.",
+    "sortPopular": "Mais populares",
+    "sortAZ": "Alfabética (A-Z)",
+    "sortZA": "Alfabética (Z-A)",
+    "sortPriceLow": "Menor preço",
+    "sortPriceHigh": "Maior preço",
+    "results": "Resultados",
+    "noResults": "Nenhum resultado encontrado",
+    "filters": "Filtros",
+    "searchFilters": "Pesquisar filtros...",
+    "availability": "Disponibilidade",
+    "cycleType": "Tipo de Ciclo",
+    "seedType": "Tipo de Semente",
+    "cycleAutomatic": "Automática",
+    "cycleFastFlowering": "Fast Flowering",
+    "cyclePhotoperiod": "Fotoperiódica",
+    "available": "Disponível",
+    "unavailable": "Indisponível",
+    "findYourSeed": "Encontre a sua semente ideal",
+    "stillDoubt": "Ainda tem dúvidas?"
   },
   "common": {
     "loading": "A carregar...",
     "error": "Ocorreu um erro",
     "back": "Voltar",
-    "home": "Início"
+    "home": "Início",
+    "changeRegion": "Mudar Região",
+    "signIn": "Entrar",
+    "cart": "Carrinho",
+    "emptyCart": "Carrinho vazio",
+    "continueShopping": "Continuar a comprar",
+    "account": "Conta",
+    "myOrders": "Os meus pedidos",
+    "brand": "Coruja Seeds",
+    "language": "Idioma",
+    "darkMode": "Modo escuro"
   },
   "faq": {
     "title": "Perguntas Frequentes",
-    "subtitle": "Tire as suas dúvidas sobre as nossas genéticas e envios."
+    "subtitle": "Tire as suas dúvidas sobre as nossas genéticas e envios.",
+    "q1": "As sementes são originais?",
+    "a1": "Sim, todas as nossas genéticas são rigorosamente selecionadas e testadas.",
+    "q2": "Como é feito o envio?",
+    "a2": "Os envios são feitos em embalagens discretas e seguras.",
+    "q3": "Quais são as formas de pagamento?",
+    "a3": "Aceitamos transferências e métodos compatíveis com a nossa plataforma.",
+    "q4": "Posso acompanhar o meu pedido?",
+    "a4": "Sim, disponibilizamos código de rastreio após a postagem.",
+    "q5": "Como guardo as sementes?",
+    "a5": "Recomendamos manter num local fresco, seco e ao abrigo da luz."
   },
   "footer": {
     "rights": "Todos os direitos reservados.",
-    "tagline": "Genéticas de elite para colecionadores."
+    "tagline": "Genéticas de elite para colecionadores.",
+    "navigation": "Navegação",
+    "shop": "Loja",
+    "info": "Informação",
+    "trackOrder": "Rastrear Pedido",
+    "payment": "Pagamento",
+    "paymentInfo": "Informações de Pagamento",
+    "shippingInfo": "Informações de Envio",
+    "disclaimerTitle": "Aviso Legal",
+    "disclaimer": "Sementes de coleção destinadas estritamente a fins de preservação genética."
   },
   "account": {
     "title": "A minha conta",
-    "welcome": "Bem-vindo de volta"
+    "welcome": "Bem-vindo de volta",
+    "myOrders": "Os meus pedidos"
   },
   "orderLookup": {
     "title": "Consultar Pedido",
@@ -43,6 +94,7 @@
   },
   "NotFoundPage": {
     "title": "Página não encontrada",
-    "description": "A página que procura não existe ou foi movida."
+    "description": "A página que procura não existe ou foi movida.",
+    "backHome": "Voltar ao início"
   }
 }
