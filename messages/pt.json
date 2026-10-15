@@ -2,6 +2,47 @@
   "metadata": {
     "heroHeading": "Coruja Genetics & Seeds",
     "heroSub": "Genéticas exclusivas de alta qualidade para colecionadores.",
-    "heroCta": "Ver Catálogo"
+    "heroCta": "Ver Catálogo",
+    "heroTagline": "Genética de Elite",
+    "homeTitle": "Coruja Genetics & Seeds",
+    "homeDescription": "Genéticas exclusivas de alta qualidade para colecionadores.",
+    "feature1Title": "Genética Exclusiva",
+    "feature1Desc": "Strains cuidadosamente selecionadas e estabilizadas.",
+    "feature2Title": "Envio Seguro",
+    "feature2Desc": "Embalagem discreta e segura para todo o mundo.",
+    "feature3Title": "Suporte Especializado",
+    "feature3Desc": "Atendimento dedicado para colecionadores.",
+    "feature4Title": "Qualidade Garantida",
+    "feature4Desc": "Sementes viáveis e testadas rigorosamente."
+  },
+  "shop": {
+    "title": "Loja",
+    "subtitle": "Explore o nosso catálogo de genéticas exclusivas."
+  },
+  "common": {
+    "loading": "A carregar...",
+    "error": "Ocorreu um erro",
+    "back": "Voltar",
+    "home": "Início"
+  },
+  "faq": {
+    "title": "Perguntas Frequentes",
+    "subtitle": "Tire as suas dúvidas sobre as nossas genéticas e envios."
+  },
+  "footer": {
+    "rights": "Todos os direitos reservados.",
+    "tagline": "Genéticas de elite para colecionadores."
+  },
+  "account": {
+    "title": "A minha conta",
+    "welcome": "Bem-vindo de volta"
+  },
+  "orderLookup": {
+    "title": "Consultar Pedido",
+    "description": "Insira os dados para acompanhar o seu envio."
+  },
+  "NotFoundPage": {
+    "title": "Página não encontrada",
+    "description": "A página que procura não existe ou foi movida."
   }
 }
