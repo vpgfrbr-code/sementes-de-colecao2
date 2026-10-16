@@ -13,12 +13,12 @@ export async function GET() {
     .from("flash_sales")
     .select(
       `id, active, coupon_id, discount_type, discount_value, ends_at, created_at,
-       flash_sale_translations(id, locale, title, subtitle, button_text),
-       flash_sale_items(id, product_id, category_id,
-         products(id, slug, images, product_translations(locale, name)),
-         categories(id, slug, category_translations(locale, name))
-       ),
-       coupons(id, code, type, value)`
+        flash_sale_translations(id, locale, title, subtitle, button_text),
+        flash_sale_items(id, product_id, category_id,
+          products(id, slug, images, product_translations(locale, name)),
+          categories(id, slug, category_translations(locale, name))
+        ),
+        coupons(id, code, type, value)`
     )
     .order("created_at", { ascending: false });
 
@@ -116,7 +116,7 @@ export async function POST(req: NextRequest) {
  * Resolves all product IDs participating in a flash sale (direct + via categories),
  * then sets or clears on_sale flags on those products.
  */
-export async function syncProductSaleFlags(
+async function syncProductSaleFlags(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   supabase: any,
   flashSaleId: string,
