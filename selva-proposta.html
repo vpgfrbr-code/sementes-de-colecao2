@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Selva Seeds × Studio Zone3</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap");
+    :root{
+      --jungle-deep:#0d2818;
+      --jungle:#1a4d2e;
+      --jungle-light:#2d7a47;
+      --lime:#a8e063;
+      --sand:#f5efe6;
+      --bone:#fdfbf7;
+      --ink:#0f1a13;
+      --muted:#5a6b5e;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:"Outfit",system-ui,sans-serif;color:var(--ink);background:var(--sand);line-height:1.5;font-size:11pt}
+    .page{max-width:210mm;min-height:297mm;margin:0 auto;background:var(--bone);box-shadow:0 4px 40px rgba(13,40,24,.15);position:relative;overflow:hidden}
+    .header{background:linear-gradient(135deg,var(--jungle-deep) 0%,var(--jungle) 60%,var(--jungle-light) 100%);color:#fff;padding:2.25rem 2.5rem 1.75rem;position:relative;overflow:hidden}
+    .header::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 85% 20%,rgba(168,224,99,.18),transparent 50%);pointer-events:none}
+    .eyebrow{font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--lime);margin-bottom:.6rem;font-weight:500}
+    h1{font-family:"IBM Plex Serif",Georgia,serif;font-size:2rem;font-weight:400;letter-spacing:-.02em;line-height:1.15}
+    h1 strong{color:var(--lime);font-weight:600}
+    .sub{margin-top:.75rem;font-size:.9rem;color:rgba(255,255,255,.82);max-width:55ch}
+    .body{padding:1.75rem 2.5rem 2.25rem}
+    h2{font-size:.7rem;text-transform:uppercase;letter-spacing:.18em;color:var(--jungle);margin-bottom:.55rem;font-weight:600}
+    .pitch{font-family:"IBM Plex Serif",Georgia,serif;font-size:1.1rem;font-style:italic;color:var(--jungle-deep);line-height:1.45;margin:1.25rem 0;padding:1rem 1.25rem;border-left:3px solid var(--jungle-light);background:rgba(168,224,99,.08)}
+    .pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:.85rem;margin:1rem 0 1.5rem}
+    .pillar{background:#fff;border:1px solid rgba(13,40,24,.1);border-radius:8px;padding:.9rem 1rem}
+    .pillar-num{font-family:"IBM Plex Serif",serif;font-size:1.6rem;color:var(--jungle-light);font-weight:600;line-height:1}
+    .pillar h3{font-size:.92rem;color:var(--jungle-deep);margin:.45rem 0 .35rem;font-weight:600}
+    .pillar p{font-size:.78rem;color:var(--muted);line-height:1.4}
+    .features-grid{display:grid;grid-template-columns:1fr 1fr;gap:.4rem 1.5rem;margin-top:.5rem;font-size:.83rem}
+    .features-grid div{padding:.25rem 0 .25rem 1.1rem;position:relative;border-bottom:1px dashed rgba(13,40,24,.08)}
+    .features-grid div::before{content:"●";position:absolute;left:0;color:var(--jungle-light);font-size:.6rem;top:.55rem}
+    .plans{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.75rem}
+    .plan{border:1px solid rgba(13,40,24,.12);border-radius:10px;padding:1.1rem 1.2rem;background:#fff;position:relative}
+    .plan.pro{border-color:var(--jungle-light);box-shadow:0 4px 20px rgba(45,122,71,.15)}
+    .plan.pro::after{content:"recomendado";position:absolute;top:-9px;right:1rem;background:var(--jungle-light);color:#fff;font-size:.6rem;padding:.18rem .55rem;border-radius:3px;letter-spacing:.1em;text-transform:uppercase;font-weight:600}
+    .plan-name{font-family:"IBM Plex Serif",serif;font-size:1.1rem;font-weight:600;color:var(--jungle-deep);margin-bottom:.4rem}
+    .plan-price{font-size:.85rem;color:var(--muted);margin-bottom:.7rem}
+    .plan-price strong{font-size:1.05rem;color:var(--jungle-deep)}
+    .plan ul{list-style:none;font-size:.78rem;color:var(--ink)}
+    .plan li{padding:.2rem 0 .2rem 1rem;position:relative}
+    .plan li::before{content:"✓";position:absolute;left:0;color:var(--jungle-light);font-weight:700}
+    .timeline{display:flex;gap:.5rem;margin-top:.5rem;font-size:.76rem}
+    .tl-step{flex:1;padding:.55rem .65rem;background:#fff;border:1px solid rgba(13,40,24,.1);border-radius:6px;position:relative}
+    .tl-step b{display:block;color:var(--jungle-light);font-size:.65rem;letter-spacing:.1em;text-transform:uppercase;margin-bottom:.25rem}
+    .footer{margin-top:1.5rem;padding-top:.85rem;border-top:1px solid rgba(13,40,24,.12);display:flex;justify-content:space-between;align-items:center;font-size:.75rem;color:var(--muted)}
+    .footer .cta{background:var(--jungle-deep);color:#fff;padding:.55rem .95rem;border-radius:6px;font-weight:500;font-size:.78rem}
+    @page{size:A4;margin:0}
+    @media print{body{background:#fff;-webkit-print-color-adjust:exact;print-color-adjust:exact}.page{box-shadow:none;min-height:auto}}
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <p class="eyebrow">One-Pager · Proposta de Parceria</p>
+      <h1>Loja online da <strong>Selva Seeds</strong>,<br/>pronta em 3 semanas.</h1>
+      <p class="sub">Plataforma e-commerce premium, com checkout PIX direto, painel administrativo completo e tudo já testado em produção no Sementes de Coleção.</p>
+    </header>
+
+    <div class="body">
+      <p class="pitch">"Vocês não precisam contratar dev, escolher plugin, integrar gateway, configurar tracking. A loja que o Sementes de Coleção usa hoje — multi-idioma, PIX direto, painel admin — é o ponto de partida da Selva Seeds. Setup em dias, não meses."</p>
+
+      <h2>Por que faz sentido</h2>
+      <div class="pillars">
+        <div class="pillar">
+          <div class="pillar-num">01</div>
+          <h3>Já está pronto</h3>
+          <p>Código testado em produção, processando pedidos reais. Você não paga pra ser cobaia.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">02</div>
+          <h3>Foco no nicho</h3>
+          <p>Pensado para sementes: variantes (cor, contagem), age gate, multi-moeda, cupons de afiliado.</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-num">03</div>
+          <h3>Sem intermediário</h3>
+          <p>PIX cai direto na conta da Selva Seeds. Zero taxa de marketplace.</p>
+        </div>
+      </div>
+
+      <h2>O que vocês recebem</h2>
+      <div class="features-grid">
+        <div>Catálogo com variações e estoque</div>
+        <div>Checkout PIX (Woovi) integrado</div>
+        <div>Multi-idioma PT / EN / ES</div>
+        <div>Multi-moeda BRL / USD / EUR</div>
+        <div>Painel admin completo</div>
+        <div>Sistema de cupons e afiliados</div>
+        <div>Reviews de produtos</div>
+        <div>Flash sales com timer</div>
+        <div>Hero banners com vídeo</div>
+        <div>Emails transacionais automáticos</div>
+        <div>SEO técnico, sitemap, OG images</div>
+        <div>Mobile-first, performance otimizada</div>
+      </div>
+
+      <h2 style="margin-top:1.4rem">Investimento</h2>
+      <div class="plans">
+        <div class="plan">
+          <div class="plan-name">Start</div>
+          <div class="plan-price"><strong>R$ 8.500</strong> setup &middot; <strong>R$ 597/mês</strong></div>
+          <ul>
+            <li>Loja completa, marca da Selva</li>
+            <li>Domínio próprio configurado</li>
+            <li>Até 50 produtos no setup</li>
+            <li>1 ajuste visual (cores/logo/hero)</li>
+            <li>Hospedagem, segurança, backups</li>
+            <li>Suporte por email (48h)</li>
+          </ul>
+        </div>
+        <div class="plan pro">
+          <div class="plan-name">Pro</div>
+          <div class="plan-price"><strong>R$ 14.900</strong> setup &middot; <strong>R$ 1.197/mês</strong></div>
+          <ul>
+            <li>Tudo do Start +</li>
+            <li>Customização visual completa</li>
+            <li>Produtos ilimitados, importação CSV</li>
+            <li>Email transacional com domínio próprio</li>
+            <li>Setup de Analytics + Pixel + GTM</li>
+            <li>Suporte prioritário (24h)</li>
+            <li>2h/mês de evolução incluídas</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2 style="margin-top:1.4rem">Cronograma</h2>
+      <div class="timeline">
+        <div class="tl-step"><b>Sem 1</b>Kick-off, identidade aplicada, domínio configurado</div>
+        <div class="tl-step"><b>Sem 2</b>Catálogo carregado, checkout PIX testado</div>
+        <div class="tl-step"><b>Sem 3</b>Tracking, ajustes finais, treinamento do admin</div>
+        <div class="tl-step"><b>Sem 4</b>Go-live e acompanhamento dos primeiros pedidos</div>
+      </div>
+
+      <div class="footer">
+        <div>Studio Zone3 · Abril 2026 · Validade 30 dias</div>
+        <div class="cta">Próximo passo: workshop de 60 min</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

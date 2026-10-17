@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "next dev",
     "prebuild": "node -e \"try{require('child_process').execSync('chmod -R 755 .',{stdio:'inherit'})}catch(e){}\"",
-    "build": "next build --webpack",
+    "build": "next build",
     "start": "node scripts/start-next.js",
     "lint": "eslint",
     "optimize:videos": "node scripts/optimize-videos.mjs"
@@ -63,5 +63,4 @@
     "tsx": "^4.21.0",
     "typescript": "^5"
   }
-
 }
