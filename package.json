@@ -6,10 +6,10 @@
   "engines": {
     "node": ">=18.18.0"
   },
-  "scripts": {
+"scripts": {
     "dev": "next dev",
     "prebuild": "node -e \"try{require('child_process').execSync('chmod -R 755 .',{stdio:'inherit'})}catch(e){}\"",
-    "build": "next build",
+    "build": "next build --webpack",
     "start": "node scripts/start-next.js",
     "lint": "eslint",
     "optimize:videos": "node scripts/optimize-videos.mjs"
