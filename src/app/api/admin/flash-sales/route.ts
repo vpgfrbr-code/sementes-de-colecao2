@@ -116,7 +116,7 @@ export async function POST(req: NextRequest) {
  * Resolves all product IDs participating in a flash sale (direct + via categories),
  * then sets or clears on_sale flags on those products.
  */
-async function syncProductSaleFlags(
+export async function syncProductSaleFlags(
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   supabase: any,
   flashSaleId: string,
